@@ -46,7 +46,9 @@ internal class PlatformPrefs(private val context: Context) {
     val sessionId get() = preferences.getString("session", null)
     val source get() = preferences.getString("source", "health_connect") ?: "health_connect"
     val start get() = preferences.getLong("start", 0)
-    val focus get() = preferences.getBoolean("focus", false) && sessionId != null
+    val focus get() = preferences.getBoolean("focus", false) && Store.get(context).state.value.activeSession?.let {
+        it.active && it.id == sessionId && it.focusRequested
+    } == true
     fun reading(): StepReading = StepReading(
         if (preferences.contains("steps")) preferences.getLong("steps", 0) else null,
         preferences.getString("status", "Pendiente de sincronizar") ?: "Pendiente de sincronizar",

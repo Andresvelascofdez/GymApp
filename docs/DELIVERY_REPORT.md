@@ -12,8 +12,8 @@ Both APKs are local debug builds with verified APK Signature Scheme v2 signature
 
 | Build | Local artifact name | SHA256 |
 | --- | --- | --- |
-| Generic | `local-artifacts/gymapp-generic-debug.apk` | `31aa2121f645b84051247deb6f3daf412ffddde05052846a95a1c072fc5b6a8d` |
-| Personal, LOCAL ONLY | `local-artifacts/gymapp-personal-debug.apk` | `a54a3153c2607e829ec99fb1a66892c8dc61cb0f5cea7f253fe1fa9f1de7973b` |
+| Generic | `local-artifacts/gymapp-generic-debug.apk` | `7827ceeccb97e8f37e3aa52a49a3a69ed1eca4c417c74646acb147283d02fdb8` |
+| Personal, LOCAL ONLY | `local-artifacts/gymapp-personal-debug.apk` | `8a224fa59d0635a25199fb20180c22cff781257020b5f6b50a2686f709ec34de` |
 
 The generic APK has no personal asset. The personal asset matches the local input byte for byte. Generic outputs were rebuilt after the personal build and checked again. Runtime installation and first launch succeeded for both identifiers; the personal profile comparison was local and printed no profile values. CI uses its own debug signing key, so its APK checksum can differ from the local APK.
 
@@ -26,7 +26,7 @@ The generic APK has no personal asset. The personal asset matches the local inpu
 | JVM/domain/Room tests | PASS: 24 tests, zero failures/errors/skips. `testDebugUnitTest`; 17 DomainTest, four StoreTest, three FocusPolicyTest. |
 | Android build | PASS: `assembleDebug`, generic and personal builds. Both installed and launched on the isolated emulator. |
 | Android lint | PASS: zero errors, 74 warnings. Warnings concern pinned older compatible versions/catalog style, synchronous preference commits, application-context singleton, unused resources, untranslated native-service labels and an attribute ignored below API31. No checks were globally disabled. |
-| UI/platform instrumentation | PASS: 12 tests, zero failures/skips, Android16/API36 isolated AVD. Nine Compose flows and three platform integration tests. |
+| UI/platform instrumentation | PASS: 13 tests, zero failures/skips, Android16/API36 isolated AVD. Nine Compose flows and four platform integration tests. |
 | Actual process stop/reopen | PASS: an explicitly recorded synthetic set remained after `am force-stop` and relaunch. Compared persisted UUID, start, sets, steps, goal, plan, status and abbreviated flag. Local evidence: `.local/process-recovery/result.json`. |
 | Small-screen inspection | Inspected the generic app at 360×640dp and 130% font scale; navigation remained visible and content scrollable. Synthetic captures remain local. System-bar icon contrast was corrected and the final suite rerun. |
 | APK isolation/signatures | PASS: `scripts/inspect_apk.py` and `apksigner verify --verbose`; generic/personal assets separated, signatures valid. |
@@ -60,7 +60,7 @@ PASS describes the executed software checks and cited inspection. It does not im
 | AC16 | PASS | Unknown counts, actual reading timestamp and returned origin metadata; no claim of a watch connection without data. |
 | AC17 | PASS | Zero-set rejection, single weights transition, reminder rules distinguish active weights from pending cardio. |
 | AC18 | NOT_RUN | Whitelist policy and actual restricted-app barrier passed; Spotify exact package is allowed by tests. Switching to the real installed Spotify app was not run because Spotify was absent. |
-| AC19 | PASS | Live connected-service and Android enabled-service state are used; instrumented service enable/restore and inactive status. |
+| AC19 | PASS | Live connected-service and Android enabled-service state are used; stale transport cannot activate focus after the authoritative Room session closes. Instrumented service enable/restore and stale-session regression passed. |
 | AC20 | PASS | All ten confirmations, cancel reset and immediate emergency inside the abandonment dialog tested. |
 | AC21 | PASS | Actual Android Settings remained accessible through the barrier; system/emergency allowlist tests and direct emergency exit. Physical incoming calls remain untested. |
 | AC22 | PASS | Source/UI inspection: no session duration limit/alerts, shutdown, night restriction or image-based calorie recognition. Rest and expressly chosen timed cardio are separate. |
@@ -70,7 +70,7 @@ PASS describes the executed software checks and cited inspection. It does not im
 | AC26 | PASS | Measurement/average UI flow, missing-day average tests and optional wellbeing persistence. No automatic restriction/diagnosis. |
 | AC27 | PASS | SAF chooser implementation and bounded import; validation before Room replacement, invalid import rollback and repeated round-trip without duplicates. External document-provider UI round-trip was not separately exercised. |
 | AC28 | PASS | Generic/private build asset checks, separate identifiers and explicit public-index gate. Personal artifact stays ignored. |
-| AC29 | PASS | 24 JVM + 12 emulator tests, build and lint executed; reports retained locally and CI reports configured. |
+| AC29 | PASS | 24 JVM + 13 emulator tests, build and lint executed; reports retained locally and CI reports configured. |
 | AC30 | NOT_RUN | Authorized GitHub publication/remote-SHA/workflow verification follows local validation; update below when complete. |
 | AC31 | NOT_RUN | No physical POCO/watch connected. No vendor survival or real watch receipt is claimed. |
 | AC32 | PASS | No Internet permission, accounts, analytics, advertisements or runtime AI/backend; local storage and native integration. |

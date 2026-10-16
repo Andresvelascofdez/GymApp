@@ -51,6 +51,28 @@ class PlatformIntegrationTest {
         return find(automation.rootInActiveWindow)
     }
 
+    @Test fun staleTransportCannotReactivateFocusAfterPersistedSessionCloses() {
+        val store = Store.get(context)
+        val original = store.state.value
+        val controller = PlatformController(context)
+        val transport = PlatformPrefs(context)
+        try {
+            store.update { it.copy(activeSession = null, settings = it.settings.copy(focusEnabled = true)) }
+            transport.preferences.edit().putString("session", "synthetic_stale_session").putBoolean("focus", true).commit()
+            assertFalse(transport.focus)
+            store.startSession()
+            assertFalse(transport.focus)
+            val session = requireNotNull(store.state.value.activeSession)
+            controller.syncSession(session.id, session.startedAt, session.steps.source, focus = true)
+            assertTrue(transport.focus)
+            store.closeSession(SessionStatus.SENSOR_UNVERIFIED, "Synthetic interrupted transport update")
+            assertFalse(transport.focus)
+        } finally {
+            controller.syncSession(null)
+            store.update { original }
+        }
+    }
+
     @Test fun voluntaryBarrierPermitsSettingsAndEmergencyWithoutReadingAppContent() {
         val store = Store.get(context)
         val original = store.state.value

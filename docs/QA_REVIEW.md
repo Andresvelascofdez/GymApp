@@ -26,6 +26,8 @@ Reviewed the integrated source against PRODUCT_SPEC.md and AC01–AC32. This rev
 
 ## Evidence limits
 
+Additional coordinator regression after the independent review: focus permission state in the transport preferences could outlive a closed persisted session if the process stopped before UI reconciliation. The focus predicate now requires the same active Room session and its captured focus request. `staleTransportCannotReactivateFocusAfterPersistedSessionCloses` passed on the Android16 emulator, including stale/mismatched identifiers and a session closed before transport synchronization. The final local suite contains 24 JVM tests and 13 instrumented tests.
+
 No unresolved must-fix source defect remained among the findings above after reinspection. This is a scoped review, not a claim of exhaustive verification. Final test and lint reruns must include the corrected implementation; transient earlier failing reports must not be described as final PASS results.
 
 Actual Health Connect overlapping/late provider records, exact sensor boundary behavior on a physical phone, service survival under POCO/HyperOS and actual watch-to-Mi Fitness sharing require device evidence. AC14 provider integration and AC31 physical outcomes must remain NOT_RUN wherever that evidence is absent. An emulator barrier test can establish the tested Android behavior, but cannot establish vendor firmware survival.
