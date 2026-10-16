@@ -38,9 +38,19 @@ def check():
             except json.JSONDecodeError:
                 errors.append(f"Invalid JSON: {path}")
                 continue
-            if isinstance(data, dict) and "age_years" in data:
-                if any(data.get(k) is not None for k in ("age_years", "height_cm", "current_weight_kg", "target_weight_kg")):
-                    errors.append(f"Non-anonymous profile: {path}")
+            if isinstance(data, dict) and (data.get("format") == "GymApp" or {"mealLogs", "workouts", "settings"}.issubset(data)):
+                errors.append(f"User backup/state export: {path}")
+
+            def contains_profile(value):
+                if isinstance(value, dict):
+                    fields = {"age_years", "height_cm", "current_weight_kg", "target_weight_kg"}
+                    if fields.intersection(value) and any(value.get(k) is not None for k in fields):
+                        return True
+                    return any(contains_profile(child) for child in value.values())
+                return isinstance(value, list) and any(contains_profile(child) for child in value)
+
+            if contains_profile(data):
+                errors.append(f"Non-anonymous profile: {path}")
     if errors:
         raise SystemExit("\n".join(errors))
     print(f"PASS: {count} public staged/index files; no forbidden payload detected")
