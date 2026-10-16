@@ -62,3 +62,5 @@ Las cantidades se pesan en crudo/seco o como se venden según el alimento. Los c
 Datos alimentarios de [USDA SR Legacy/FoodData Central](https://fdc.nal.usda.gov/data-documentation/) de dominio público y etiquetas identificadas en [sources.json](data/nutrition/sources.json). La rutina es una adaptación a los requisitos, no una reproducción literal de ACSM. Véanse [fuentes](docs/SOURCES.md), [decisiones técnicas](docs/TECH_DECISIONS.md) e [informe de entrega](docs/DELIVERY_REPORT.md).
 
 No se ha seleccionado una licencia de software para el proyecto. La atribución de los datos no concede una licencia al código.
+
+Entrega verificada: 24 pruebas JVM y 13 pruebas en emulador Android16, build y lint sin errores. El [commit de código entregado](https://github.com/Andresvelascofdez/GymApp/commit/f93fcc2af0dbdcc16b900d08eeb39899ca76b34a) pasó su [CI](https://github.com/Andresvelascofdez/GymApp/actions/runs/38917248776). Descarga el [APK genérico verificado](https://github.com/Andresvelascofdez/GymApp/actions/runs/38917248776/artifacts/12052873015); el informe enlazado contiene checksums y los controles físicos pendientes. El perfil y APK personal permanecen locales.

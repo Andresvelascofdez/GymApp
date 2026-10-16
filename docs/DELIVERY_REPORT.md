@@ -2,7 +2,9 @@
 
 Software status: SOFTWARE_COMPLETO. Verification date: 2026-10-16 (Asia/Nicosia).
 Physical POCO/watch validation: NOT_RUN; no physical device was connected.
-GitHub publication and CI: pending the authorized publication step; this section will be updated with remote evidence.
+GitHub publication: [Andresvelascofdez/GymApp, main](https://github.com/Andresvelascofdez/GymApp).
+Native source revision verified: [`f93fcc2af0dbdcc16b900d08eeb39899ca76b34a`](https://github.com/Andresvelascofdez/GymApp/commit/f93fcc2af0dbdcc16b900d08eeb39899ca76b34a). `git ls-remote origin refs/heads/main` matched that SHA after publication.
+CI: [run38917248776](https://github.com/Andresvelascofdez/GymApp/actions/runs/38917248776), completed SUCCESS for that exact native source revision. This documentation records its results; documentation-only revisions do not change the APK source.
 
 ## Delivered build
 
@@ -14,8 +16,11 @@ Both APKs are local debug builds with verified APK Signature Scheme v2 signature
 | --- | --- | --- |
 | Generic | `local-artifacts/gymapp-generic-debug.apk` | `7827ceeccb97e8f37e3aa52a49a3a69ed1eca4c417c74646acb147283d02fdb8` |
 | Personal, LOCAL ONLY | `local-artifacts/gymapp-personal-debug.apk` | `8a224fa59d0635a25199fb20180c22cff781257020b5f6b50a2686f709ec34de` |
+| Generic, CI source revision above | [verified CI artifact](https://github.com/Andresvelascofdez/GymApp/actions/runs/38917248776/artifacts/12052873015) | `b8289d798adabd96c8177c8eea46e7cc3ba6bb6e886b67631ca0519c4448f48f` |
 
 The generic APK has no personal asset. The personal asset matches the local input byte for byte. Generic outputs were rebuilt after the personal build and checked again. Runtime installation and first launch succeeded for both identifiers; the personal profile comparison was local and printed no profile values. CI uses its own debug signing key, so its APK checksum can differ from the local APK.
+
+The CI artifact was downloaded, its generic APK asset isolation and v2 signature were verified, and the included lint XML was checked for zero errors. The artifact ZIP SHA256 is `ce5937626812bd505a4818088182e903613acda969331389ad4c078f90d0efd0`. The CI APK is also available locally as `local-artifacts/gymapp-generic-ci-debug.apk`.
 
 ## Executed verification
 
@@ -71,7 +76,7 @@ PASS describes the executed software checks and cited inspection. It does not im
 | AC27 | PASS | SAF chooser implementation and bounded import; validation before Room replacement, invalid import rollback and repeated round-trip without duplicates. External document-provider UI round-trip was not separately exercised. |
 | AC28 | PASS | Generic/private build asset checks, separate identifiers and explicit public-index gate. Personal artifact stays ignored. |
 | AC29 | PASS | 24 JVM + 13 emulator tests, build and lint executed; reports retained locally and CI reports configured. |
-| AC30 | NOT_RUN | Authorized GitHub publication/remote-SHA/workflow verification follows local validation; update below when complete. |
+| AC30 | PASS | Source revision `f93fcc2` was pushed without force, matched the remote main SHA and passed run38917248776. Generic artifact12052873015 was downloaded and inspected. README contains installation, permissions and limits. |
 | AC31 | NOT_RUN | No physical POCO/watch connected. No vendor survival or real watch receipt is claimed. |
 | AC32 | PASS | No Internet permission, accounts, analytics, advertisements or runtime AI/backend; local storage and native integration. |
 
