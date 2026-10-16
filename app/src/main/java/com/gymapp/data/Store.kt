@@ -231,4 +231,3 @@ class Store private constructor(private val context: Context) {
     fun saveWeight(date: LocalDate, kg: Double) = update { it.copy(weights = it.weights.filterNot { w -> w.date == date.toString() } + WeightLog(date = date.toString(), kg = kg)) }
     fun saveWellbeing(log: WellbeingLog) = update { it.copy(wellbeing = it.wellbeing.filterNot { w -> w.date == log.date } + log) }
 }
-
