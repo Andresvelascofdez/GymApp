@@ -1,0 +1,785 @@
+{
+  "schema_version": 1,
+  "recipes": [
+    {
+      "id": "monday_breakfast_v1",
+      "version": 1,
+      "name_es": "Bol de yogur, avena y plátano",
+      "slot": "breakfast",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "yogurt",
+          "grams": 350
+        },
+        {
+          "food_id": "oats",
+          "grams": 40
+        },
+        {
+          "food_id": "banana",
+          "grams": 120
+        }
+      ],
+      "instructions_es": [
+        "Mezclar yogur y avena; añadir el plátano troceado. Canela opcional sin azúcar."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 446.37,
+        "protein_g": 41.76,
+        "fat_g": 3.6,
+        "carbohydrates_available_g": 58.79,
+        "fiber_g": 6.72
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "monday_lunch_v1",
+      "version": 1,
+      "name_es": "Pollo al limón con arroz y verduras",
+      "slot": "lunch",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "chicken",
+          "grams": 250
+        },
+        {
+          "food_id": "rice",
+          "grams": 60
+        },
+        {
+          "food_id": "oil",
+          "grams": 10
+        },
+        {
+          "food_id": "broccoli",
+          "grams": 150
+        },
+        {
+          "food_id": "zucchini",
+          "grams": 150
+        }
+      ],
+      "instructions_es": [
+        "Cocer el arroz. Cocinar el pollo con limón/especias y las verduras, repartiendo únicamente el aceite indicado."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 677.1,
+        "protein_g": 66.97,
+        "fat_g": 18.07,
+        "carbohydrates_available_g": 55.84,
+        "fiber_g": 6.0
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "monday_dinner_v1",
+      "version": 1,
+      "name_es": "Salmón con patata y verduras al horno",
+      "slot": "dinner",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "salmon",
+          "grams": 200
+        },
+        {
+          "food_id": "potato",
+          "grams": 200
+        },
+        {
+          "food_id": "broccoli",
+          "grams": 150
+        },
+        {
+          "food_id": "zucchini",
+          "grams": 150
+        }
+      ],
+      "instructions_es": [
+        "Hornear la patata y las verduras; incorporar el salmón hasta que esté bien cocinado. Sin aceite adicional."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 646.5,
+        "protein_g": 50.99,
+        "fat_g": 28.05,
+        "carbohydrates_available_g": 40.01,
+        "fiber_g": 9.6
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "monday_snack_v1",
+      "version": 1,
+      "name_es": "Cottage con manzana y almendras",
+      "slot": "snack",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "cottage",
+          "grams": 250
+        },
+        {
+          "food_id": "apple",
+          "grams": 150
+        },
+        {
+          "food_id": "almond",
+          "grams": 20
+        }
+      ],
+      "instructions_es": [
+        "Servir el cottage con la manzana troceada y las almendras."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 383.8,
+        "protein_g": 39.62,
+        "fat_g": 13.99,
+        "carbohydrates_available_g": 24.17,
+        "fiber_g": 6.1
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "tuesday_breakfast_v1",
+      "version": 1,
+      "name_es": "Revuelto con tostadas y tomate",
+      "slot": "breakfast",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "egg",
+          "grams": 100
+        },
+        {
+          "food_id": "white",
+          "grams": 200
+        },
+        {
+          "food_id": "bread",
+          "grams": 60
+        },
+        {
+          "food_id": "tomato",
+          "grams": 150
+        },
+        {
+          "food_id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions_es": [
+        "Cocinar huevo y claras con el aceite indicado. Tostar el pan y servir con tomate."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 470.2,
+        "protein_g": 43.15,
+        "fat_g": 17.25,
+        "carbohydrates_available_g": 28.24,
+        "fiber_g": 5.4
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "tuesday_lunch_v1",
+      "version": 1,
+      "name_es": "Pasta integral con pavo y tomate",
+      "slot": "lunch",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "turkey",
+          "grams": 250
+        },
+        {
+          "food_id": "pasta",
+          "grams": 70
+        },
+        {
+          "food_id": "tomato",
+          "grams": 200
+        },
+        {
+          "food_id": "onion",
+          "grams": 100
+        },
+        {
+          "food_id": "oil",
+          "grams": 15
+        }
+      ],
+      "instructions_es": [
+        "Cocer la pasta. Cocinar pavo, cebolla y tomate natural triturado con el aceite indicado; mezclar."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 738.9,
+        "protein_g": 71.11,
+        "fat_g": 20.95,
+        "carbohydrates_available_g": 58.17,
+        "fiber_g": 9.7
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "tuesday_dinner_v1",
+      "version": 1,
+      "name_es": "Bacalao con patata y calabacín",
+      "slot": "dinner",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "cod",
+          "grams": 250
+        },
+        {
+          "food_id": "potato",
+          "grams": 250
+        },
+        {
+          "food_id": "zucchini",
+          "grams": 300
+        },
+        {
+          "food_id": "oil",
+          "grams": 15
+        }
+      ],
+      "instructions_es": [
+        "Cocinar el pescado, patata y calabacín al horno o vapor; repartir el aceite entre cocción y aliño. Ajo y pimentón opcionales."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 583.5,
+        "protein_g": 53.28,
+        "fat_g": 17.86,
+        "carbohydrates_available_g": 44.8,
+        "fiber_g": 8.25
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "tuesday_snack_v1",
+      "version": 1,
+      "name_es": "Yogur con fresas y almendras",
+      "slot": "snack",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "yogurt",
+          "grams": 300
+        },
+        {
+          "food_id": "strawberry",
+          "grams": 200
+        },
+        {
+          "food_id": "almond",
+          "grams": 25
+        }
+      ],
+      "instructions_es": [
+        "Mezclar el yogur con fresas y almendras."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 370.75,
+        "protein_g": 37.53,
+        "fat_g": 13.08,
+        "carbohydrates_available_g": 22.62,
+        "fiber_g": 7.12
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "wednesday_breakfast_v1",
+      "version": 1,
+      "name_es": "Tortitas de avena con yogur y fresas",
+      "slot": "breakfast",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "oats",
+          "grams": 50
+        },
+        {
+          "food_id": "egg",
+          "grams": 50
+        },
+        {
+          "food_id": "white",
+          "grams": 200
+        },
+        {
+          "food_id": "yogurt",
+          "grams": 100
+        },
+        {
+          "food_id": "strawberry",
+          "grams": 150
+        },
+        {
+          "food_id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions_es": [
+        "Triturar avena, huevo y claras, añadir agua si hace falta y cocinar tortitas con el aceite indicado. Servir con yogur y fresas."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 510.72,
+        "protein_g": 44.89,
+        "fat_g": 14.54,
+        "carbohydrates_available_g": 43.34,
+        "fiber_g": 7.5
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "wednesday_lunch_v1",
+      "version": 1,
+      "name_es": "Lentejas guisadas con pollo",
+      "slot": "lunch",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "lentils",
+          "grams": 60
+        },
+        {
+          "food_id": "chicken",
+          "grams": 200
+        },
+        {
+          "food_id": "carrot",
+          "grams": 150
+        },
+        {
+          "food_id": "onion",
+          "grams": 100
+        },
+        {
+          "food_id": "tomato",
+          "grams": 150
+        },
+        {
+          "food_id": "oil",
+          "grams": 10
+        }
+      ],
+      "instructions_es": [
+        "Guisar lentejas secas con verduras, agua y pollo hasta cocción completa. Usar únicamente el aceite indicado."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 669.7,
+        "protein_g": 63.59,
+        "fat_g": 16.64,
+        "carbohydrates_available_g": 53.44,
+        "fiber_g": 14.12
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "wednesday_dinner_v1",
+      "version": 1,
+      "name_es": "Fajitas de pollo con salsa de yogur",
+      "slot": "dinner",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "chicken",
+          "grams": 200
+        },
+        {
+          "food_id": "wrap",
+          "grams": 64
+        },
+        {
+          "food_id": "pepper",
+          "grams": 200
+        },
+        {
+          "food_id": "onion",
+          "grams": 100
+        },
+        {
+          "food_id": "yogurt",
+          "grams": 100
+        },
+        {
+          "food_id": "avocado",
+          "grams": 50
+        },
+        {
+          "food_id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions_es": [
+        "Saltear pollo, pimiento y cebolla con el aceite indicado. Rellenar las tortillas; añadir aguacate y salsa de yogur con limón/especias."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 702.36,
+        "protein_g": 64.88,
+        "fat_g": 21.73,
+        "carbohydrates_available_g": 53.46,
+        "fiber_g": 10.02
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "wednesday_snack_v1",
+      "version": 1,
+      "name_es": "Cottage con manzana y nueces",
+      "slot": "snack",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "cottage",
+          "grams": 200
+        },
+        {
+          "food_id": "apple",
+          "grams": 150
+        },
+        {
+          "food_id": "walnut",
+          "grams": 10
+        }
+      ],
+      "instructions_es": [
+        "Servir cottage, manzana troceada y nueces."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 295.4,
+        "protein_g": 29.91,
+        "fat_g": 9.78,
+        "carbohydrates_available_g": 22.02,
+        "fiber_g": 4.27
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "thursday_breakfast_v1",
+      "version": 1,
+      "name_es": "Avena nocturna con manzana y nueces",
+      "slot": "breakfast",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "yogurt",
+          "grams": 300
+        },
+        {
+          "food_id": "oats",
+          "grams": 40
+        },
+        {
+          "food_id": "apple",
+          "grams": 150
+        },
+        {
+          "food_id": "walnut",
+          "grams": 10
+        }
+      ],
+      "instructions_es": [
+        "Mezclar yogur y avena la noche anterior y refrigerar. Añadir manzana y nueces antes de comer."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 455.97,
+        "protein_g": 37.21,
+        "fat_g": 9.98,
+        "carbohydrates_available_g": 50.82,
+        "fiber_g": 7.87
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "thursday_lunch_v1",
+      "version": 1,
+      "name_es": "Solomillo de cerdo con arroz y verduras",
+      "slot": "lunch",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "pork",
+          "grams": 250
+        },
+        {
+          "food_id": "rice",
+          "grams": 50
+        },
+        {
+          "food_id": "broccoli",
+          "grams": 200
+        },
+        {
+          "food_id": "pepper",
+          "grams": 100
+        },
+        {
+          "food_id": "oil",
+          "grams": 15
+        }
+      ],
+      "instructions_es": [
+        "Cocer el arroz y cocinar solomillo y verduras. Repartir el aceite indicado entre cocción y aliño."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 677.0,
+        "protein_g": 62.91,
+        "fat_g": 21.86,
+        "carbohydrates_available_g": 50.86,
+        "fiber_g": 7.8
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "thursday_dinner_v1",
+      "version": 1,
+      "name_es": "Tortilla de champiñones y espinacas con patata",
+      "slot": "dinner",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "egg",
+          "grams": 100
+        },
+        {
+          "food_id": "white",
+          "grams": 250
+        },
+        {
+          "food_id": "potato",
+          "grams": 250
+        },
+        {
+          "food_id": "mushroom",
+          "grams": 200
+        },
+        {
+          "food_id": "spinach",
+          "grams": 100
+        },
+        {
+          "food_id": "oil",
+          "grams": 10
+        }
+      ],
+      "instructions_es": [
+        "Cocinar champiñones y espinacas con el aceite y cuajar huevo/claras. Acompañar con patata cocida o al horno."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 622.5,
+        "protein_g": 53.98,
+        "fat_g": 21.23,
+        "carbohydrates_available_g": 46.97,
+        "fiber_g": 9.45
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "thursday_snack_v1",
+      "version": 1,
+      "name_es": "Cottage con plátano y almendras",
+      "slot": "snack",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "cottage",
+          "grams": 300
+        },
+        {
+          "food_id": "banana",
+          "grams": 120
+        },
+        {
+          "food_id": "almond",
+          "grams": 15
+        }
+      ],
+      "instructions_es": [
+        "Servir cottage con plátano y almendras."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 421.65,
+        "protein_g": 46.48,
+        "fat_g": 12.39,
+        "carbohydrates_available_g": 31.95,
+        "fiber_g": 5.0
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "friday_breakfast_v1",
+      "version": 1,
+      "name_es": "Tostadas de cottage, tomate y aguacate",
+      "slot": "breakfast",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "bread",
+          "grams": 80
+        },
+        {
+          "food_id": "cottage",
+          "grams": 220
+        },
+        {
+          "food_id": "tomato",
+          "grams": 150
+        },
+        {
+          "food_id": "avocado",
+          "grams": 50
+        }
+      ],
+      "instructions_es": [
+        "Tostar el pan y cubrir con cottage, tomate y aguacate. Sin aceite adicional."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 475.8,
+        "protein_g": 43.08,
+        "fat_g": 13.73,
+        "carbohydrates_available_g": 38.94,
+        "fiber_g": 9.95
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "friday_lunch_v1",
+      "version": 1,
+      "name_es": "Arroz salteado con gambas y verduras",
+      "slot": "lunch",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "shrimp",
+          "grams": 250
+        },
+        {
+          "food_id": "rice",
+          "grams": 60
+        },
+        {
+          "food_id": "oil",
+          "grams": 15
+        },
+        {
+          "food_id": "broccoli",
+          "grams": 150
+        },
+        {
+          "food_id": "zucchini",
+          "grams": 150
+        }
+      ],
+      "instructions_es": [
+        "Cocer el arroz y saltear verduras y gambas con el aceite indicado; mezclar y cocinar completamente las gambas."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 634.6,
+        "protein_g": 60.98,
+        "fat_g": 17.79,
+        "carbohydrates_available_g": 55.84,
+        "fiber_g": 6.0
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "friday_dinner_v1",
+      "version": 1,
+      "name_es": "Hamburguesa magra casera con patatas",
+      "slot": "dinner",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "beef",
+          "grams": 250
+        },
+        {
+          "food_id": "bread",
+          "grams": 70
+        },
+        {
+          "food_id": "potato",
+          "grams": 150
+        },
+        {
+          "food_id": "tomato",
+          "grams": 100
+        },
+        {
+          "food_id": "lettuce",
+          "grams": 100
+        },
+        {
+          "food_id": "oil",
+          "grams": 10
+        }
+      ],
+      "instructions_es": [
+        "Formar hamburguesa con ternera magra y cocinar completamente. Hornear patatas con el aceite indicado; montar con pan, tomate y lechuga. Sin queso/salsas añadidos."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 757.4,
+        "protein_g": 67.55,
+        "fat_g": 25.43,
+        "carbohydrates_available_g": 53.04,
+        "fiber_g": 9.85
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    },
+    {
+      "id": "friday_snack_v1",
+      "version": 1,
+      "name_es": "Yogur con plátano y almendras",
+      "slot": "snack",
+      "servings": 1,
+      "ingredients": [
+        {
+          "food_id": "yogurt",
+          "grams": 300
+        },
+        {
+          "food_id": "banana",
+          "grams": 120
+        },
+        {
+          "food_id": "almond",
+          "grams": 10
+        }
+      ],
+      "instructions_es": [
+        "Mezclar yogur con plátano y almendras."
+      ],
+      "nutrition_reference": {
+        "energy_kcal": 326.7,
+        "protein_g": 34.32,
+        "fat_g": 5.39,
+        "carbohydrates_available_g": 34.19,
+        "fiber_g": 4.37
+      },
+      "nutrition_is_estimate": true,
+      "storage_note_es": "Refrigerar pronto. Preparar por tandas y congelar las raciones que no se consumirán dentro de 3–4 días; seguir conservación del ingrediente más restrictivo."
+    }
+  ]
+}

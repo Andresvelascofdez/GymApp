@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "week_id": "varied_week_v1",
+  "days": [
+    {
+      "weekday": "monday",
+      "name_es": "Lunes",
+      "meals": {
+        "breakfast": "monday_breakfast_v1",
+        "lunch": "monday_lunch_v1",
+        "dinner": "monday_dinner_v1",
+        "snack": "monday_snack_v1"
+      },
+      "nutrition_reference": {
+        "energy_kcal": 2153.77,
+        "protein_g": 199.34,
+        "fat_g": 63.71,
+        "carbohydrates_available_g": 178.81,
+        "fiber_g": 28.42
+      }
+    },
+    {
+      "weekday": "tuesday",
+      "name_es": "Martes",
+      "meals": {
+        "breakfast": "tuesday_breakfast_v1",
+        "lunch": "tuesday_lunch_v1",
+        "dinner": "tuesday_dinner_v1",
+        "snack": "tuesday_snack_v1"
+      },
+      "nutrition_reference": {
+        "energy_kcal": 2163.35,
+        "protein_g": 205.07,
+        "fat_g": 69.14,
+        "carbohydrates_available_g": 153.84,
+        "fiber_g": 30.48
+      }
+    },
+    {
+      "weekday": "wednesday",
+      "name_es": "Miércoles",
+      "meals": {
+        "breakfast": "wednesday_breakfast_v1",
+        "lunch": "wednesday_lunch_v1",
+        "dinner": "wednesday_dinner_v1",
+        "snack": "wednesday_snack_v1"
+      },
+      "nutrition_reference": {
+        "energy_kcal": 2178.18,
+        "protein_g": 203.28,
+        "fat_g": 62.68,
+        "carbohydrates_available_g": 172.25,
+        "fiber_g": 35.91
+      }
+    },
+    {
+      "weekday": "thursday",
+      "name_es": "Jueves",
+      "meals": {
+        "breakfast": "thursday_breakfast_v1",
+        "lunch": "thursday_lunch_v1",
+        "dinner": "thursday_dinner_v1",
+        "snack": "thursday_snack_v1"
+      },
+      "nutrition_reference": {
+        "energy_kcal": 2177.12,
+        "protein_g": 200.57,
+        "fat_g": 65.46,
+        "carbohydrates_available_g": 180.59,
+        "fiber_g": 30.12
+      }
+    },
+    {
+      "weekday": "friday",
+      "name_es": "Viernes",
+      "meals": {
+        "breakfast": "friday_breakfast_v1",
+        "lunch": "friday_lunch_v1",
+        "dinner": "friday_dinner_v1",
+        "snack": "friday_snack_v1"
+      },
+      "nutrition_reference": {
+        "energy_kcal": 2194.5,
+        "protein_g": 205.93,
+        "fat_g": 62.34,
+        "carbohydrates_available_g": 182.02,
+        "fiber_g": 30.17
+      }
+    }
+  ],
+  "weekend_policy": "free_optional_logging",
+  "calorie_values_are_estimates": true
+}

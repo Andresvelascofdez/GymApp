@@ -1,0 +1,3 @@
+<resources>
+    <string name="focus_accessibility_description">Concentración voluntaria: detecta solo el paquete de la ventana abierta y muestra una barrera en aplicaciones distintas de GymApp y Spotify. No lee textos, mensajes ni contenido. Emergencias, llamadas, Ajustes, permisos y superficies esenciales permanecen disponibles. Se puede desactivar en Ajustes.</string>
+</resources>

@@ -1,0 +1,635 @@
+{
+  "schema_version": 1,
+  "routine_id": "five_day_v1",
+  "exercises": [
+    {
+      "id": "machine_chest_press",
+      "name_es": "Press de pecho en máquina",
+      "muscle_groups": [
+        "chest",
+        "triceps"
+      ],
+      "alternatives": [
+        "dumbbell_bench_press"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "incline_dumbbell_press",
+      "name_es": "Press inclinado con mancuernas",
+      "muscle_groups": [
+        "chest",
+        "shoulders"
+      ],
+      "alternatives": [
+        "incline_machine_press"
+      ],
+      "load_unit": "kg_per_dumbbell",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "seated_shoulder_press",
+      "name_es": "Press de hombros sentado",
+      "muscle_groups": [
+        "shoulders",
+        "triceps"
+      ],
+      "alternatives": [
+        "machine_shoulder_press"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "lateral_raise",
+      "name_es": "Elevaciones laterales",
+      "muscle_groups": [
+        "shoulders"
+      ],
+      "alternatives": [
+        "cable_lateral_raise"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "cable_triceps",
+      "name_es": "Tríceps en polea",
+      "muscle_groups": [
+        "triceps"
+      ],
+      "alternatives": [
+        "overhead_cable_triceps"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "lat_pulldown",
+      "name_es": "Jalón al pecho",
+      "muscle_groups": [
+        "back",
+        "biceps"
+      ],
+      "alternatives": [
+        "neutral_grip_pulldown"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "chest_supported_row",
+      "name_es": "Remo con pecho apoyado",
+      "muscle_groups": [
+        "back"
+      ],
+      "alternatives": [
+        "machine_row"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "seated_cable_row",
+      "name_es": "Remo sentado en polea",
+      "muscle_groups": [
+        "back"
+      ],
+      "alternatives": [
+        "machine_row"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "reverse_pec_deck",
+      "name_es": "Aperturas inversas en máquina",
+      "muscle_groups": [
+        "rear_delts"
+      ],
+      "alternatives": [
+        "cable_reverse_fly"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "cable_curl",
+      "name_es": "Curl de bíceps en polea",
+      "muscle_groups": [
+        "biceps"
+      ],
+      "alternatives": [
+        "dumbbell_curl"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "hammer_curl",
+      "name_es": "Curl martillo",
+      "muscle_groups": [
+        "biceps"
+      ],
+      "alternatives": [
+        "rope_hammer_curl"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "leg_press",
+      "name_es": "Prensa de piernas",
+      "muscle_groups": [
+        "quadriceps",
+        "glutes"
+      ],
+      "alternatives": [
+        "supported_machine_squat"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "leg_extension",
+      "name_es": "Extensión de cuádriceps",
+      "muscle_groups": [
+        "quadriceps"
+      ],
+      "alternatives": [
+        "alternate_leg_extension_machine"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "seated_leg_curl",
+      "name_es": "Curl femoral sentado",
+      "muscle_groups": [
+        "hamstrings"
+      ],
+      "alternatives": [
+        "lying_leg_curl"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "machine_hip_thrust",
+      "name_es": "Hip thrust en máquina",
+      "muscle_groups": [
+        "glutes"
+      ],
+      "alternatives": [
+        "smith_hip_thrust"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "machine_calf_raise",
+      "name_es": "Gemelos en máquina",
+      "muscle_groups": [
+        "calves"
+      ],
+      "alternatives": [
+        "calf_press"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "standing_pallof_press",
+      "name_es": "Pallof press de pie",
+      "muscle_groups": [
+        "core"
+      ],
+      "alternatives": [
+        "band_pallof_press"
+      ],
+      "load_unit": "kg",
+      "per_side_repetitions": true
+    },
+    {
+      "id": "dumbbell_rdl",
+      "name_es": "Peso muerto rumano con mancuernas",
+      "muscle_groups": [
+        "hamstrings",
+        "glutes"
+      ],
+      "alternatives": [
+        "cable_pull_through"
+      ],
+      "load_unit": "kg_per_dumbbell",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "dumbbell_bench_press",
+      "name_es": "Press de pecho con mancuernas",
+      "alternatives": [],
+      "load_unit": "kg_per_dumbbell",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "incline_machine_press",
+      "name_es": "Press inclinado en máquina",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "machine_shoulder_press",
+      "name_es": "Press de hombros en máquina",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "cable_lateral_raise",
+      "name_es": "Elevación lateral en polea",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "overhead_cable_triceps",
+      "name_es": "Extensión de tríceps sobre cabeza en polea",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "neutral_grip_pulldown",
+      "name_es": "Jalón con agarre neutro",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "machine_row",
+      "name_es": "Remo en máquina",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "cable_reverse_fly",
+      "name_es": "Aperturas inversas en polea",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "dumbbell_curl",
+      "name_es": "Curl con mancuernas",
+      "alternatives": [],
+      "load_unit": "kg_per_dumbbell",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "rope_hammer_curl",
+      "name_es": "Curl martillo con cuerda",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "supported_machine_squat",
+      "name_es": "Sentadilla en máquina con apoyo",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "alternate_leg_extension_machine",
+      "name_es": "Extensión de cuádriceps en otra máquina",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "lying_leg_curl",
+      "name_es": "Curl femoral tumbado",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "smith_hip_thrust",
+      "name_es": "Hip thrust en multipower",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "calf_press",
+      "name_es": "Gemelos en prensa",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    },
+    {
+      "id": "band_pallof_press",
+      "name_es": "Pallof press con banda",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": true
+    },
+    {
+      "id": "cable_pull_through",
+      "name_es": "Pull-through en polea",
+      "alternatives": [],
+      "load_unit": "kg",
+      "per_side_repetitions": false
+    }
+  ],
+  "sessions": [
+    {
+      "id": "push",
+      "name_es": "Empuje",
+      "weekday": "monday",
+      "exercises": [
+        {
+          "exercise_id": "machine_chest_press",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "incline_dumbbell_press",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "seated_shoulder_press",
+          "sets": 2,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 120,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "lateral_raise",
+          "sets": 3,
+          "reps_min": 12,
+          "reps_max": 20,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "cable_triceps",
+          "sets": 3,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        }
+      ]
+    },
+    {
+      "id": "pull",
+      "name_es": "Tirón",
+      "weekday": "tuesday",
+      "exercises": [
+        {
+          "exercise_id": "lat_pulldown",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "chest_supported_row",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "seated_cable_row",
+          "sets": 2,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 120,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "reverse_pec_deck",
+          "sets": 3,
+          "reps_min": 12,
+          "reps_max": 20,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "cable_curl",
+          "sets": 3,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "hammer_curl",
+          "sets": 2,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        }
+      ]
+    },
+    {
+      "id": "legs_a",
+      "name_es": "Piernas A",
+      "weekday": "wednesday",
+      "exercises": [
+        {
+          "exercise_id": "leg_press",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 180,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "leg_extension",
+          "sets": 2,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "seated_leg_curl",
+          "sets": 3,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "machine_hip_thrust",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "machine_calf_raise",
+          "sets": 3,
+          "reps_min": 12,
+          "reps_max": 20,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "standing_pallof_press",
+          "sets": 2,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 60,
+          "target_reps_in_reserve": 2
+        }
+      ]
+    },
+    {
+      "id": "upper",
+      "name_es": "Torso",
+      "weekday": "thursday",
+      "exercises": [
+        {
+          "exercise_id": "machine_chest_press",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "lat_pulldown",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "chest_supported_row",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "lateral_raise",
+          "sets": 2,
+          "reps_min": 12,
+          "reps_max": 20,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "cable_curl",
+          "sets": 2,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "cable_triceps",
+          "sets": 2,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        }
+      ]
+    },
+    {
+      "id": "legs_b",
+      "name_es": "Piernas B",
+      "weekday": "friday",
+      "exercises": [
+        {
+          "exercise_id": "dumbbell_rdl",
+          "sets": 3,
+          "reps_min": 8,
+          "reps_max": 12,
+          "rest_seconds": 180,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "leg_press",
+          "sets": 3,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 150,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "seated_leg_curl",
+          "sets": 3,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "leg_extension",
+          "sets": 2,
+          "reps_min": 12,
+          "reps_max": 15,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "machine_calf_raise",
+          "sets": 3,
+          "reps_min": 12,
+          "reps_max": 20,
+          "rest_seconds": 90,
+          "target_reps_in_reserve": 2
+        },
+        {
+          "exercise_id": "standing_pallof_press",
+          "sets": 2,
+          "reps_min": 10,
+          "reps_max": 15,
+          "rest_seconds": 60,
+          "target_reps_in_reserve": 2
+        }
+      ]
+    }
+  ],
+  "warmup_sets_not_counted": true,
+  "duration_limit_minutes": null,
+  "steps_goal": 3500,
+  "light_mode": {
+    "first_exercises_count": 3,
+    "sets_per_exercise": 2,
+    "record_as": "abbreviated"
+  },
+  "progression": {
+    "method": "double_progression",
+    "require_all_sets_at_top": true,
+    "user_accepts_load_increase": true,
+    "increment": "smallest_available"
+  },
+  "notes_es": [
+    "Calentar y hacer aproximaciones antes de series efectivas.",
+    "Adaptar recorrido y variante si hay molestias; no entrenar con dolor.",
+    "Descansos orientativos ajustables; no son un límite de sesión."
+  ]
+}

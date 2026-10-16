@@ -1,0 +1,17 @@
+/.private/
+/.local/
+/local-artifacts/
+/.gradle/
+/.kotlin/
+/local.properties
+__pycache__/
+*.pyc
+**/build/
+*.apk
+*.aab
+*.jks
+*.keystore
+*.db
+*.db-*
+*.zip
+*.hprof

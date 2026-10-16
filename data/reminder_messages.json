@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "absence": [
+    "Llevas varios días sin entrenar. Elige una hora y empieza.",
+    "Hoy toca volver. Tu siguiente sesión está preparada.",
+    "La sesión pendiente sigue aquí. ¿Empezamos?",
+    "Si hoy cuesta, utiliza el entrenamiento abreviado.",
+    "Un paso práctico: prepara la ropa y sal hacia el gimnasio.",
+    "No necesitas decidir los ejercicios: ya están listos.",
+    "Has pospuesto el aviso. Elige «Empezar» cuando estés listo.",
+    "Vuelve con un entrenamiento que puedas completar hoy.",
+    "Tu próximo entrenamiento está preparado para continuar.",
+    "¿Puedes reservar ahora un hueco para entrenar?",
+    "Objetivo pendiente: volver al gimnasio.",
+    "Abre tu sesión y continúa con el siguiente ejercicio."
+  ],
+  "cardio": [
+    "Pesas completadas. Te quedan {remaining_steps} pasos de esta sesión.",
+    "El objetivo de pasos sigue pendiente: {remaining_steps}.",
+    "Llevas {steps} de {goal} pasos desde que empezaste."
+  ],
+  "snooze_summary": "Has pospuesto el aviso {count} veces hoy."
+}

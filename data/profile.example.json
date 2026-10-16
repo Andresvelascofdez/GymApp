@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "age_years": null,
+  "height_cm": null,
+  "current_weight_kg": null,
+  "target_weight_kg": null,
+  "goal": "fat_loss_with_muscle_preservation_and_possible_gain",
+  "training_experience": "experienced",
+  "avoid_exercises": [
+    "lunges",
+    "abdominal_crunch"
+  ],
+  "food_restrictions": [],
+  "batch_cooking": true,
+  "device_model": "POCO X8 Pro Max",
+  "fitness_app": "Mi Fitness",
+  "wearable_brand": "Xiaomi",
+  "wearable_model": null
+}

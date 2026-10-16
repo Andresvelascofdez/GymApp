@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "servings_per_day": 1,
+  "days": [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday"
+  ],
+  "items": [
+    {
+      "food_id": "almond",
+      "grams": 70.0
+    },
+    {
+      "food_id": "apple",
+      "grams": 450.0
+    },
+    {
+      "food_id": "avocado",
+      "grams": 100.0
+    },
+    {
+      "food_id": "banana",
+      "grams": 360.0
+    },
+    {
+      "food_id": "beef",
+      "grams": 250.0
+    },
+    {
+      "food_id": "bread",
+      "grams": 210.0
+    },
+    {
+      "food_id": "broccoli",
+      "grams": 650.0
+    },
+    {
+      "food_id": "carrot",
+      "grams": 150.0
+    },
+    {
+      "food_id": "chicken",
+      "grams": 650.0
+    },
+    {
+      "food_id": "cod",
+      "grams": 250.0
+    },
+    {
+      "food_id": "cottage",
+      "grams": 970.0
+    },
+    {
+      "food_id": "egg",
+      "grams": 250.0
+    },
+    {
+      "food_id": "lentils",
+      "grams": 60.0
+    },
+    {
+      "food_id": "lettuce",
+      "grams": 100.0
+    },
+    {
+      "food_id": "mushroom",
+      "grams": 200.0
+    },
+    {
+      "food_id": "oats",
+      "grams": 130.0
+    },
+    {
+      "food_id": "oil",
+      "grams": 115.0
+    },
+    {
+      "food_id": "onion",
+      "grams": 300.0
+    },
+    {
+      "food_id": "pasta",
+      "grams": 70.0
+    },
+    {
+      "food_id": "pepper",
+      "grams": 300.0
+    },
+    {
+      "food_id": "pork",
+      "grams": 250.0
+    },
+    {
+      "food_id": "potato",
+      "grams": 850.0
+    },
+    {
+      "food_id": "rice",
+      "grams": 170.0
+    },
+    {
+      "food_id": "salmon",
+      "grams": 200.0
+    },
+    {
+      "food_id": "shrimp",
+      "grams": 250.0
+    },
+    {
+      "food_id": "spinach",
+      "grams": 100.0
+    },
+    {
+      "food_id": "strawberry",
+      "grams": 350.0
+    },
+    {
+      "food_id": "tomato",
+      "grams": 750.0
+    },
+    {
+      "food_id": "turkey",
+      "grams": 250.0
+    },
+    {
+      "food_id": "walnut",
+      "grams": 20.0
+    },
+    {
+      "food_id": "white",
+      "grams": 650.0
+    },
+    {
+      "food_id": "wrap",
+      "grams": 64.0
+    },
+    {
+      "food_id": "yogurt",
+      "grams": 1450.0
+    },
+    {
+      "food_id": "zucchini",
+      "grams": 750.0
+    }
+  ],
+  "note_es": "Referencia calculada para cinco días. La app debe recalcular al editar días/platos/raciones."
+}

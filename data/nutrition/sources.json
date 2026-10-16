@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "usda_sr_legacy",
+      "name": "USDA SR Legacy / FoodData Central",
+      "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR-Legacy/SR-Leg_ASC.zip",
+      "accessed": "2026-10-16",
+      "license": "public_domain_CC0",
+      "carbohydrate_basis": "total_including_fiber"
+    },
+    {
+      "id": "fage_0",
+      "name": "FAGE Total 0%",
+      "url": "https://gr.fage/yogurts/total-0/total-0-500g",
+      "accessed": "2026-10-16"
+    },
+    {
+      "id": "quaker_gr",
+      "name": "Quaker classic oats GR",
+      "url": "https://www.quakeroats.gr/en/products/classic-oats/quaker-oats-bag",
+      "accessed": "2026-10-16"
+    },
+    {
+      "id": "tilda_basmati",
+      "name": "Tilda Pure Basmati dry",
+      "url": "https://www.tilda.com/products/pure-basmati-rice/",
+      "accessed": "2026-10-16"
+    },
+    {
+      "id": "arla_cottage",
+      "name": "Arla Protein Cottage Cheese 14g protein/100g",
+      "url": "https://www.arlafoods.gr/our-brands/arla-protein/cottage-cheese-220g/",
+      "accessed": "2026-10-16"
+    },
+    {
+      "id": "barilla_whole",
+      "name": "Barilla Spaghetti Integral",
+      "url": "https://www.barilla.com/es-es/productos/pasta/integral/spaghetti-integral",
+      "accessed": "2026-10-16"
+    },
+    {
+      "id": "oep_thin",
+      "name": "Old El Paso Extra Thin 32g",
+      "url": "https://www.oldelpaso.co.uk/products/six-large-extra-thin-tortillas",
+      "accessed": "2026-10-16"
+    },
+    {
+      "id": "fat_energy",
+      "name": "Aceite de oliva, referencia genérica de grasa, 9 kcal/g",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj",
+      "accessed": "2026-10-16",
+      "note": "Referencia de cálculo genérica; sustituible por etiqueta de producto. No se presenta como análisis de una marca."
+    }
+  ]
+}

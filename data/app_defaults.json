@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "theme": "dark",
+  "units": "metric",
+  "repository": "https://github.com/Andresvelascofdez/GymApp",
+  "nutrition": {
+    "energy_range_kcal": [
+      2000,
+      2200
+    ],
+    "protein_target_g": 200,
+    "meal_slots": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "snack_timing": "afternoon",
+    "weekend": "free_optional_logging",
+    "cooking_weight_basis": "raw_or_dry",
+    "add_exercise_calories": false
+  },
+  "training": {
+    "days_per_week": 5,
+    "session_duration_limit_minutes": null,
+    "session_duration_alerts_minutes": [],
+    "steps_goal": 3500,
+    "steps_window": "since_session_start",
+    "alternate_timed_cardio_enabled": false
+  },
+  "focus": {
+    "enabled_by_default_on_start": true,
+    "allowed_external_user_packages": [
+      "com.spotify.music"
+    ],
+    "normal_exit_confirmations": 10,
+    "emergency_exit_immediate": true,
+    "block_system_emergency_or_settings": false
+  },
+  "reminders": {
+    "completed_absent_local_dates": 3,
+    "first_reminder_on_following_date": true,
+    "interval_minutes": 60,
+    "window_start": "06:00",
+    "window_end": "21:00",
+    "snooze_minutes": 30,
+    "timezone": "device",
+    "skip_paused_dates": true
+  },
+  "features_removed": [
+    "food_photo_calorie_estimation",
+    "phone_shutdown",
+    "night_lock",
+    "session_duration_limit",
+    "session_duration_alerts"
+  ],
+  "runtime_ai": false,
+  "required_cloud_backend": false
+}

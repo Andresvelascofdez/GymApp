@@ -1,0 +1,22 @@
+# Android integrations
+
+Health Connect uses `androidx.health.connect:connect-client:1.1.0`. The only health permission requested is read access to steps. A foreground, user-visible refresh requests one `StepsRecord.COUNT_TOTAL` aggregate between the persisted session start Instant and now, without adding individual records or adding phone sensor counts. Health Connect applies the user's activity source priorities to deduplicate overlapping activity data. The returned origin package names are evidence of data origins, not proof of a direct watch connection. A missing aggregate remains unknown. Late data may change the next aggregate; batches crossing the boundary depend on provider allocation and cannot guarantee exact watch steps at the boundary. No background health-read permission is requested.
+
+The alternative phone source is selected before a session and remains fixed. A health foreground service listens to `TYPE_STEP_COUNTER` only after the runtime activity recognition permission is granted. The first eligible reading establishes a baseline, so steps before that reading are not claimed. Sensor timestamps preceding the session are discarded. Every reading stores the cumulative delta, boot identifier and baseline in the same persisted session. A reboot or counter reset preserves counted steps and marks an unverified gap. The service starts from the visible app; the boot receiver does not start it silently. There is no fabricated reconstruction from a different source.
+
+Voluntary focus uses an AccessibilityService restricted to window-state events. It reads package identifiers, never window nodes, texts or message contents; `canRetrieveWindowContent` is false. GymApp and Spotify are permitted, along with explicit system permission, Settings, call/emergency, keyboard, keyguard and launcher surfaces. Other app packages receive an accessibility overlay with return, Spotify, accessibility Settings and immediate emergency exit. Emergency exit closes the persisted session with its explicit status. The launcher remains accessible; the implementation does not intercept Home or claim device-owner restrictions. Revocation, force stop, reboot and vendor service management can end protection. The UI checks both Android's enabled-service setting and the live service connection.
+
+Absence and pending-step notifications use WorkManager one-time requests. The domain calendar rules determine the next eligible local minute, using the phone's current ZoneId; boot, clock and zone broadcasts recalculate it. Missed windows are evaluated at actual execution time; notifications are not replayed in a burst. Starting a session or finishing weights cancels the prior notification. Snooze persists 30 minutes in the shared store. Start actions open the native app. WorkManager execution is inexact and can be delayed by Doze and vendor battery policies. Notification permission, channel settings and Do Not Disturb remain under Android control.
+
+Rest completion uses a process Handler while the app process is running plus an inexact `AlarmManager.setAndAllowWhileIdle` fallback and a deduplicating token. It requests no exact-alarm permission. Delivery can be delayed during idle; the persisted UI countdown is the reference. The notification's vibration is governed by its Android channel and system settings. There is no workout-duration timer or workout-duration notification.
+
+Physical POCO/HyperOS service survival and actual Mi Fitness/watch synchronization require the target device. In HyperOS, search Settings for Accessibility, GymApp notification permissions, automatic startup and battery/background restrictions; menu locations vary by installed firmware. The app opens general Android settings when a specific route is unavailable. No permission is granted by the app itself.
+
+Official references checked during implementation:
+
+- [Health Connect aggregation and source-priority deduplication](https://developer.android.com/health-and-fitness/health-connect/aggregate-data)
+- [Health foreground service requirements](https://developer.android.com/develop/background-work/services/fgs/service-types#health)
+- [AccessibilityService and accessibility overlays](https://developer.android.com/reference/android/accessibilityservice/AccessibilityService)
+- [WorkManager requests and timing limits](https://developer.android.com/develop/background-work/background-tasks/persistent/getting-started/define-work)
+
+Hardware outcomes must be recorded separately from automated policy and domain tests.
